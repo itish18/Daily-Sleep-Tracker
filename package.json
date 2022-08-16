@@ -19,6 +19,9 @@
     "sleep",
     "tracker"
   ],
+  "engines": {
+    "node": "17.2.0"
+  },
   "author": "Itish Verma",
   "license": "ISC",
   "bugs": {
