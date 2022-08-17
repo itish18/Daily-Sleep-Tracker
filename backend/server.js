@@ -16,8 +16,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/public", express.static("public"));
-
 app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/sleep", require("./routes/sleepRoutes"));
 
@@ -27,6 +25,6 @@ app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "../frontend/build", "index.html"));
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server started on PORT ${PORT}`);
 });
