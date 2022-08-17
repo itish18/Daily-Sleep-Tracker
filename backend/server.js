@@ -28,5 +28,5 @@ app.get("*", function (request, response) {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log("On Port 5000");
+  console.log(`Server started on PORT ${PORT}`);
 });
