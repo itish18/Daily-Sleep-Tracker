@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/users/";
+const API_URL = "/api/users/";
 
 //login user
 const login = async (userData) => {

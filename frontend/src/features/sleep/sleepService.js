@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/sleep";
+const API_URL = "/api/sleep";
 
 const createSleepEntry = async (sleepData, token) => {
   const config = {
